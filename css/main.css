@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400);
+
+body {
+	font-family: 'Lato', 'Helvetica Neue';
+	font-size: 18px;
+	font-weight: 300;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+header {
+	padding: 1em;
+	background-color: #FA5A0F;
+	border-bottom: 5px solid #EA4A00;
+	color: #FFFFFF;
+}
+
+header p {
+		color: #EEEEEE;
+		font-size: 120%;
+		margin: 0;
+	}
+
+main {
+	background-image: url("../img/ricepaper_v3.png");
+	opacity: 0.9;
+}
+
+.Info, .Menu, .About {
+	padding: 1em;
+}
+
+.Menu {
+	background-color: rgba(207,205,140, 0.5);
+}
+
+.Menu dt {
+	font-weight: 400;
+}
+
+.Menu dd {
+	font-size: 80%;
+	font-style: italic;
+	margin: 0 0 1em 1em;
+}
+
+footer {
+	padding: 1em;
+	background-color: #FC892F;
+	border-top: 5px solid #EC791F;
+	font-size: 80%;
+	text-align: right;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: #0000AA;
+}
+
+a:hover, a:active {
+	color: #0000EE;
+}
+
+h1 {
+	font-size: 300%;
+	margin: 0;
+}
+
+h2 {
+	font-size: 150%;
+	margin: 0;
+}
+
+h3 {
+	font-size: 125%;
+}
+
+h1, h2, h3 {
+	font-family: 'Raleway', 'Helvetica Neue';
+	font-weight: 300;
+}
+
+h2, h3 {
+	color: #505050;
+}
+
+@media (max-width: 992px) {
+	body {
+		font-size: 16px;
+	}
+	.container-fluid {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	header p {
+		display: none;
+	}
+}
+
+@media (min-width: 992px) {
+	body {
+		background-image: url("../img/background.jpg");
+	}
+	.container-fluid {
+		margin: 20px 20px 20px 30%;
+	}
+	nav {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 1em;
+}
+
+nav a {
+	color: #55E;
+}
+
+nav a:hover, nav a:active {
+	color: #00E;
+}
