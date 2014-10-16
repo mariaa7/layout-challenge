@@ -3,7 +3,7 @@
 
 body {
 	font-family: 'Lato', 'Helvetica Neue';
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 300;
 	background-size: 100% 100%;
 	background-attachment: fixed;
@@ -88,15 +88,14 @@ h2, h3 {
 	color: #505050;
 }
 
-@media (max-width: 992px) {
-	body {
-		font-size: 16px;
-	}
-	.container-fluid {
+.container-fluid {
 		margin-bottom: 0;
 		margin-top: 0;
-	}
+		margin-right: -20px;
+		margin-left: -20px;
+}
 
+@media (max-width: 992px) {
 	header p {
 		display: none;
 	}
@@ -105,6 +104,7 @@ h2, h3 {
 @media (min-width: 992px) {
 	body {
 		background-image: url("../img/background.jpg");
+		font-size: 18px;
 	}
 	.container-fluid {
 		margin: 20px 20px 20px 30%;
@@ -113,6 +113,10 @@ h2, h3 {
 		position: absolute;
 		top: 10px;
 		right: 10px;
+	}
+
+	header {
+		position: relative;
 	}
 }
 
@@ -127,7 +131,7 @@ nav li {
 	margin-right: 1em;
 }
 
-nav a {
+nav a:link, nav a:visited {
 	color: #55E;
 }
 
